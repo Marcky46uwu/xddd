@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página de Inicio</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f0f0f0;
+            text-align: center;
+            padding-top: 100px;
+        }
+        h1 {
+            font-size: 48px;
+            color: #333;
+            display: none;
+        }
+        #btn-wrapper {
+            margin-top: 50px;
+            animation: pulse 2s infinite;
+        }
+        #press-btn {
+            font-size: 24px;
+            padding: 20px 40px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 10px;
+            cursor: pointer;
+            outline: none;
+            transition: all 0.3s ease;
+        }
+        #press-btn:hover {
+            background-color: #45a049;
+        }
+        @keyframes pulse {
+            0% {
+                transform: scale(1);
+            }
+            50% {
+                transform: scale(1.2);
+            }
+            100% {
+                transform: scale(1);
+            }
+        }
+    </style>
+</head>
+<body background="uwuxd.jpg">
+
+    <h1 id="welcome-text">Edy, amigo, colega, kira... Eres mi hijo y jamas podras hacer nada para evitar eso, debes admitirlo. Bye bye * hace mewing *</h1>
+
+    <div id="btn-wrapper">
+        <button id="press-btn" onclick="showMessage()">Presiona aquí si eres Edy</button>
+    </div>
+
+    <script>
+        function showMessage() {
+            document.getElementById('welcome-text').style.display = 'block';
+            alert("Fuck you, bro!");
+        }
+    </script>
+
+</body>
+</html>
